@@ -1,0 +1,9 @@
+spring.application.name: slackbot
+
+slack.client:
+    url: https://api.slack.com
+    token: asodfjhpqoweiuzri2u34zowiughroiwusgf
+    channel: 'my-secret-channel'
+    polling-interval: 60000
+
+
