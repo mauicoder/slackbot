@@ -2,7 +2,6 @@ package net.maui.slackbot.service
 
 import com.slack.api.methods.response.conversations.ConversationsHistoryResponse
 import net.maui.slackbot.slack.SlackGateway
-import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono
 

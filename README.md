@@ -12,7 +12,7 @@ Look at
 package com.slack.api;
 
 class SlackConfig {
-    ... 
+
     private String auditEndpointUrlPrefix = AuditClient.ENDPOINT_URL_PREFIX;
 
     private String methodsEndpointUrlPrefix = MethodsClient.ENDPOINT_URL_PREFIX;
@@ -21,10 +21,10 @@ class SlackConfig {
 
     private String scim2EndpointUrlPrefix = SCIM2Client.ENDPOINT_URL_PREFIX;
 
-    private String statusEndpointUrlPrefix = StatusClient.ENDPOINT_URL_PREFIX;
+    private final String statusEndpointUrlPrefix = StatusClient.ENDPOINT_URL_PREFIX;
 
-    private String legacyStatusEndpointUrlPrefix = LegacyStatusClient.ENDPOINT_URL_PREFIX;
-    ...
+    private final String legacyStatusEndpointUrlPrefix = LegacyStatusClient.ENDPOINT_URL_PREFIX;
+
 }
 ```
 
