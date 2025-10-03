@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
-import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 
@@ -30,11 +29,6 @@ class SlackAppController(val slackMessageService: SlackService) {
         // The service already handles offloading the blocking Slack SDK call
         // to a dedicated thread (Schedulers.boundedElastic()).
         return slackMessageService.getLatestMessages(channelId)
-    }
-
-    @GetMapping("/")
-    fun getLatestMessages(): Flux<String> {
-        return slackMessageService.getLatestMessages()
     }
 
 }
